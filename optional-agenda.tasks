@@ -1,0 +1,49 @@
+  ______   .______   .___________. __    ______   .__   __.      ___       __      
+ /  __  \  |   _  \  |           ||  |  /  __  \  |  \ |  |     /   \     |  |     
+|  |  |  | |  |_)  | `---|  |----`|  | |  |  |  | |   \|  |    /  ^  \    |  |     
+|  |  |  | |   ___/      |  |     |  | |  |  |  | |  . `  |   /  /_\  \   |  |     
+|  `--'  | |  |          |  |     |  | |  `--'  | |  |\   |  /  _____  \  |  `----.
+ \______/  | _|          |__|     |__|  \______/  |__| \__| /__/     \__\ |_______|
+
+Creation of Optional:
+    ☐ Optional.empty()
+    ☐ Optional.ofNullable()
+    ☐ Optional.of()
+    
+Retrieving optional value : [GET]:
+    ☐ Optional.get() - but caution , you need to check the value is present or not
+    ☐ Optional.ifPresent() - perform some operation if present.
+    ☐ Optional.orElse() - to set default value if value is not present
+    ☐ Optional.orElseGet() - no default value exists and you need to compute the value if not present.
+    ☐ Optional.orElseThrow() - if no value is present and need to throw NoSuchElement Exception.
+    ☐ Optional.orElseThrow(Exception)- Throw Explicit exception.
+    
+Dont's in usage of Optional:
+    ☐ Never assign null to an optional variable
+    ☐ Avoid chaining Optional's methods with the single purpose of getting a value
+    ☐ No Field's are declared as optional
+    ☐ No Constructor arguments as Optional
+    ☐ Dont use Optional as a setters Arguments.
+    ☐ Dont use Optional as a Method Arguments.
+    ☐ Dont use Optional to Return Empty collections or Arrays.
+    ☐ Avoid using optional in Collections.
+    ☐ Avoid Optional<T> and Choose Non Generic OptionalInt,OptionalLong or OptionalDouble.
+    ☐ No Need to Unwrap for Equality Check
+    ☐ Never do as synchronized.
+
+Additional usage of Optional:
+    ☐ Transform Values Via Map() and flatMap()
+    ☐ Use filter to reject wrapped values
+    #TODO: add some other the best approaches
+
+Next in Show:
+    ☐ Optional.ifPresentOrElse - Java 9
+    ☐ Optional.or - Java9
+    ☐ Optional.stream - Java 9
+    ☐ Optional.isEmpty() - Java 11
+    .___________. __    __       ___      .__   __.  __  ___    ____    ____   ______    __    __  
+    |           ||  |  |  |     /   \     |  \ |  | |  |/  /    \   \  /   /  /  __  \  |  |  |  | 
+    `---|  |----`|  |__|  |    /  ^  \    |   \|  | |  '  /      \   \/   /  |  |  |  | |  |  |  | 
+        |  |     |   __   |   /  /_\  \   |  . `  | |    <        \_    _/   |  |  |  | |  |  |  | 
+        |  |     |  |  |  |  /  _____  \  |  |\   | |  .  \         |  |     |  `--'  | |  `--'  | 
+        |__|     |__|  |__| /__/     \__\ |__| \__| |__|\__\        |__|      \______/   \______/     

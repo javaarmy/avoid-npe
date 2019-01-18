@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Arguments<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.Arguments",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Assertions<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.Assertions",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EmptyCollection<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.EmptyCollection",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Literals<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.Literals",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Maps<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.Maps",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReturnValue<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.ReturnValue",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ternary<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.Ternary",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Utilities<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.Utilities",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ValueOf<avoid-npe>",
+            "request": "launch",
+            "mainClass": "avoid.npe.ValueOf",
+            "projectName": "avoid-npe"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-JSR305<avoid-npe>",
+            "request": "launch",
+            "mainClass": "jsr305.JSR305",
+            "projectName": "avoid-npe"
+        }
+    ]
+}
