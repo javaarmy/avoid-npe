@@ -30,7 +30,6 @@ Best practices to avoid NPE:
         ☐ JSR-305 annotations.
             ☐ @Nullable - an annotation that alerts us if we put null somewhere it doesn’t belong.
             ☐ @Nonnull - We just need to put it everywhere that we don’t already have @Nullable
-            ☐ @CheckForNull - an annotation that alerts us to do a null check for a return value.
             ☐ Use Eclipse IDE for null analysis
             ☐ Use Sonarlint for null analysis
 
@@ -40,7 +39,7 @@ Best practices to avoid NPE:
         ☐ These Checks get in the way of business logic.
 
     
-    Alternatives to Null:
+    Alternatives to Null: 
         ☐ "?." [Elvis Operator in Groovy]
                 ☐ String version = computer?.getSoundcard()?.getUSB()?.getVersion();
         ☐ "MayBe" [Haskell]
