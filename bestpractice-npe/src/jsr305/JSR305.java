@@ -1,5 +1,6 @@
 package jsr305;
 
+import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -21,5 +22,10 @@ public class JSR305 {
     @Nonnull
     public static String mustreturnNonNull(String arg ) {
         return null; //here tool warns because you are returning null;
+    }
+
+    @CheckForNull
+    public static String mayreturnNull(String arg) {
+        return arg.length() > 1 ? arg : null;
     }
 }

@@ -6,6 +6,49 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Assertions",
+            "request": "launch",
+            "mainClass": "avoid.npe.Assertions",
+            "projectName": "bestpractice-npe",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Maps",
+            "request": "launch",
+            "mainClass": "avoid.npe.Maps",
+            "projectName": "bestpractice-npe"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JSR305",
+            "request": "launch",
+            "mainClass": "jsr305.JSR305",
+            "projectName": "bestpractice-npe"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReturnValue",
+            "request": "launch",
+            "mainClass": "avoid.npe.ReturnValue",
+            "projectName": "bestpractice-npe"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EmptyCollection",
+            "request": "launch",
+            "mainClass": "avoid.npe.EmptyCollection",
+            "projectName": "bestpractice-npe"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Arguments",
+            "request": "launch",
+            "mainClass": "avoid.npe.Arguments",
+            "projectName": "bestpractice-npe"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"

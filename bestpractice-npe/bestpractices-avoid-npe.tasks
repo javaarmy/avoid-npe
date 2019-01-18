@@ -1,0 +1,67 @@
+    .__   __.  __    __   __       __         .______     ______    __  .__   __. .___________. _______ .______          _______ ___   ___   ______  _______ .______   .___________. __    ______   .__   __. 
+    |  \ |  | |  |  |  | |  |     |  |        |   _  \   /  __  \  |  | |  \ |  | |           ||   ____||   _  \        |   ____|\  \ /  /  /      ||   ____||   _  \  |           ||  |  /  __  \  |  \ |  | 
+    |   \|  | |  |  |  | |  |     |  |        |  |_)  | |  |  |  | |  | |   \|  | `---|  |----`|  |__   |  |_)  |       |  |__    \  V  /  |  ,----'|  |__   |  |_)  | `---|  |----`|  | |  |  |  | |   \|  | 
+    |  . `  | |  |  |  | |  |     |  |        |   ___/  |  |  |  | |  | |  . `  |     |  |     |   __|  |      /        |   __|    >   <   |  |     |   __|  |   ___/      |  |     |  | |  |  |  | |  . `  | 
+    |  |\   | |  `--'  | |  `----.|  `----.   |  |      |  `--'  | |  | |  |\   |     |  |     |  |____ |  |\  \----.   |  |____  /  .  \  |  `----.|  |____ |  |          |  |     |  | |  `--'  | |  |\   | 
+    |__| \__|  \______/  |_______||_______|   | _|       \______/  |__| |__| \__|     |__|     |_______|| _| `._____|   |_______|/__/ \__\  \______||_______|| _|          |__|     |__|  \______/  |__| \__| 
+
+
+Best practices to avoid NPE:
+    What,Who & Why?:
+        ☐ You are not a real Java programmer until you've dealt with a null pointer exception
+        ☐ What is Null Reference? is it really complex?
+        ☐ Who Invented Null Reference? Really?
+        ☐ Why we need null references?
+
+    Techniques to prevent Null Pointer Exceptions [VM RULE TATA] :
+        ☐ V - ValueOf
+        ☐ M - Map
+        ☐ R - Return Value
+        ☐ U - Utilities
+        ☐ L - Literal
+        ☐ E - Empty Collections
+        ☐ T - Ternary
+        ☐ A - Arguments
+        ☐ T - Tests - Spend some time to write a couple tests cases to verify no NullPointerException
+        ☐ A - Assertions
+        
+    Tools to prevent NPE:
+        ☐ Static Analysis tools such as FindBugs, IntelliJ, Checkstyle and PMD
+        ☐ JSR-305 annotations.
+            ☐ @Nullable - an annotation that alerts us if we put null somewhere it doesn’t belong.
+            ☐ @Nonnull - We just need to put it everywhere that we don’t already have @Nullable
+            ☐ @CheckForNull - an annotation that alerts us to do a null check for a return value.
+            ☐ Use Eclipse IDE for null analysis
+            ☐ Use Sonarlint for null analysis
+
+    To prevent unintended exceptions add null check:
+        ☐ Looks messy
+        ☐ Lot of boilerplate code.
+        ☐ These Checks get in the way of business logic.
+
+    
+    Alternatives to Null:
+        ☐ "?." [Elvis Operator in Groovy]
+                ☐ String version = computer?.getSoundcard()?.getUSB()?.getVersion();
+        ☐ "MayBe" [Haskell]
+                ☐  A value of type Maybe can contain either a value of a given type or nothing.
+        ☐ Option[T] [Scala]
+                ☐ Option[T] to encapsulate the presence or absence of a value of type T.
+                ☐ You then have to explicitly check whether a value is present or 
+                    not using operations available on the Option type,
+                ☐ which enforces the idea of "null checking.
+                ☐ "You can no longer "forget to do it" because it is enforced by the type system.
+    
+
+    Java-8 Optional By Definition:
+        ☐ Ecapculates Optional value.
+        ☐ Includes methods to explicitly deal with the cases where a value is present or not.
+        ☐ Optional class force you think about the case of when value is not present
+        ☐ Optional class is not replacment every single null reference.
+    
+        .___________. __    __       ___      .__   __.  __  ___    ____    ____   ______    __    __  
+        |           ||  |  |  |     /   \     |  \ |  | |  |/  /    \   \  /   /  /  __  \  |  |  |  | 
+        `---|  |----`|  |__|  |    /  ^  \    |   \|  | |  '  /      \   \/   /  |  |  |  | |  |  |  | 
+            |  |     |   __   |   /  /_\  \   |  . `  | |    <        \_    _/   |  |  |  | |  |  |  | 
+            |  |     |  |  |  |  /  _____  \  |  |\   | |  .  \         |  |     |  `--'  | |  `--'  | 
+            |__|     |__|  |__| /__/     \__\ |__| \__| |__|\__\        |__|      \______/   \______/     

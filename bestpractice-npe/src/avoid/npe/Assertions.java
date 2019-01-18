@@ -6,13 +6,13 @@ package avoid.npe;
  */
 public class Assertions {
     public static void main(String[] args) {
-        getLength("test");
+        getLength( null );
     }
 
 
     public static int getLength(String s) {
     /* Ensure that the String is not null. */
-        assert (s != null);
+        assert s != null : "Argument should not be null" ;
         return s.length();
    
     }
