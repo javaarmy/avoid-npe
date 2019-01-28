@@ -5,7 +5,7 @@
 |  `--'  | |  |          |  |     |  | |  `--'  | |  |\   |  /  _____  \  |  `----.
  \______/  | _|          |__|     |__|  \______/  |__| \__| /__/     \__\ |_______|
 
- Java-8 Optional By Definition:
+Java-8 Optional By Definition:
     ☐ Ecapculates Optional value.
     ☐ Includes methods to explicitly deal with the cases where a value is present or not.
     ☐ Optional class force you think about the case of when value is not present
@@ -21,7 +21,6 @@ Retrieving optional value : [GET]:
         ☐ Optional.isPresent() - perform some operation is present.
     ☐ Optional.orElse() - to set default value if value is not present
     ☐ Optional.orElseGet() - no default value exists and you need to compute the value if not present.
-    ☐ Optional.orElseThrow() - if no value is present and need to throw NoSuchElement Exception.
     ☐ Optional.orElseThrow(Exception)- Throw Explicit exception.
     
 Dont's in usage of Optional: [ EO PANIC ]:
@@ -39,7 +38,7 @@ Dont's in usage of Optional: [ EO PANIC ]:
         ☐ No Need to Unwrap for Equality Check
         ☐ Never do as synchronized.
 
-Additional usage of Optional: [FIT]:
+Additional usage of Optional: [F IT]:
     ☐ ifPresent
     ☐ Transform Values Via Map() and flatMap()
     ☐ Use filter to reject wrapped values
