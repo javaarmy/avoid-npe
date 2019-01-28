@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Empty",
+            "request": "launch",
+            "mainClass": "optional.create.Empty",
+            "projectName": "bestpraactice-optional"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Assertions",
             "request": "launch",
             "mainClass": "avoid.npe.Assertions",
