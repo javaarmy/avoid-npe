@@ -48,6 +48,7 @@ Next in Show:
     ☐ Optional.ifPresentOrElse - Java 9
     ☐ Optional.or - Java9
     ☐ Optional.stream - Java 9
+    ☐ Optional.orElseThrow() - Java 10
     ☐ Optional.isEmpty() - Java 11
     .___________. __    __       ___      .__   __.  __  ___    ____    ____   ______    __    __  
     |           ||  |  |  |     /   \     |  \ |  | |  |/  /    \   \  /   /  /  __  \  |  |  |  | 
